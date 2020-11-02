@@ -7,77 +7,49 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Section Name
--------------
+Discovery Environment login and setup
+--------------------------------------
 
 **Description:**
 
-..
-	#### Comment: short text description goes here ####
+In this section, we will setup a CyVerse account and create folders in the Data
+Store to organize our project.
 
 ----
 
-**Input Data:**
 
-.. list-table::
-    :header-rows: 1
-
-    * - Input
-      - Description
-      - Example
-    * -
-      -
-      -
-
-*Descriptive Steps*
-~~~~~~~~~~~~~~~~~~~
+*CyVerse Account Setup*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. 	#### Comment: Step title should be descriptive (i.e. Cleaning Read data) ###
 
 
-1. Replace the text below with your own
-
-2. Use the image src in this link to link to
-
-   - A DE App: |CyVerse_launch|
-   - An Atmosphere image: |CyVerse_launch|
-
-3. Click :guilabel:`&Cancel` to continue is how you can show a button
-
-4. Tell the user to choose an appropriate value for a setting
-
-   .. admonition:: sample-data
-
-     Tell them if they are following with our sample data exactly
-     what value to choose
+1. Obtain a CyVerse account at |CyVerse User Portal|. Register with an institutional email address (e.g., .edu or .org) if possible. If you previously have had a CyVerse account, you can also recover or reset your password on this site. After signup, you will need to verify your email address in order to activate your account.
 
 
-..
-	#### Comment: Suggested style guide:
-	1. Steps begin with a verb or preposition: Click on... OR Under the "Results Menu"
-	2. Locations of files listed parenthetically, separated by carets, ultimate object in bold
-	(Username > analyses > *output*)
-	3. Buttons and/or keywords in bold: Click on **Apps** OR select **Arabidopsis**
-	4. Primary menu titles in double quotes: Under "Input" choose...
-	5. Secondary menu titles or headers in single quotes: For the 'Select Input' option choose...
-	####
+*Discovery Environment Login and Data Sharing Setup*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Output/Results**
+In this section we will create a folder in the Discovery Environment (DE) and begin organizing a space for our experimental data and analysis results on the Data Store.
 
-.. list-table::
-    :header-rows: 1
+1. Log in to the |Discovery Environment|.
 
-    * - Output
-      - Description
-      - Example
-    * -
-      -
-      -
+2. Click on **Data** to browse your collection of files and navigate to your home folder (i.e., top folder labeled with your CyVerse username).
 
+3. Using the **File** menu function, create a new folder for this project (e.g., **rna-seq-tutorial**).
 
-----
+  .. note::
 
-**Description of output and results**
+     You should avoid using spaces or special characters (e.g., !@#$%^&) in any folder or file names.
+
+4. Once you have created this folder, you may want to share it with collaborators. To do so, select (checkbox) the **rna-seq-tutorial** folder in your data window. Then, go to the **Share** menu and choose **Share with collaborators**.
+
+5. (Optional) You can then enter the names of collaborators you wish to share data with. These collaborators must also have a CyVerse account. Once you have found collaborators to share with, you must select the level of access you wish to grant.
+
+   .. tip::
+
+     See more on Data sharing in the |Data Store Guide|.
+
 
 
 ----
@@ -96,33 +68,6 @@ Section Name
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
-
-.. Comment: Place Images Below This Line
-   use :width: to give a desired width for your image
-   use :height: to give a desired height for your image
-   replace the image name/location and URL if hyperlinked
-
-
- .. |Clickable hyperlinked image| image:: ./img/IMAGENAME.png
-    :width: 500
-    :height: 100
- .. _CyVerse logo: http://learning.cyverse.org/
-
- .. |Static image| image:: ./img/IMAGENAME.png
-    :width: 25
-    :height: 25
-
-
-
-.. Comment: Place URLS Below This Line
-
-   # Use this example to ensure that links open in new tabs, avoiding
-   # forcing users to leave the document, and making it easy to update links
-   # In a single place in this document
-
-   .. |Substitution| raw:: html # Place this anywhere in the text you want a hyperlink
-
-      <a href="REPLACE_THIS_WITH_URL" target="blank">Replace_with_text</a>
 
 
 .. |Github Repo Link|  raw:: html

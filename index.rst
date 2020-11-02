@@ -6,8 +6,8 @@
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
-**TUTORIAL NAME**
-=================
+**Plant Bioinformatics Vol 3 RNA-Seq Tutorial**
+================================================
 
 ..
     #### Comment: Use short, imperative titles e.g. Upload and share data, uploading and
@@ -16,10 +16,9 @@
 Goal
 ----
 
-..
-    #### Comment: Avoid covering upstream and downstream steps that are not explicitly and
-    necessarily part of the tutorial - write or link to separate quick
-    starts/tutorials for those parts ####
+This tutorial is an online version of an RNA-Seq tutorial developed for Vol. 3
+of Plant Bioinformatics. It is an end-to-end RNA-seq analysis using the Kallisto and Sleuth. The tutorial emphasizes reproducibility features of the
+CyVerse platforms.
 
 ----
 
@@ -35,17 +34,27 @@ Who to contact if this guide needs fixing. You can also email
     * - Maintainer
       - Institution
       - Contact
-    * - Your Name
-      - CyVerse / UA
-      - Yourname@email.com
+    * - Jason Williams
+      - CyVerse / Cold Spring Harbor Laboratory
+      - williams@cshl.edu
 ----
 
 .. toctree::
 	:maxdepth: 2
 
-	Tutorial home <self>
-	Step One <step1.rst>
-	Delete this example guide page <example_directives_delete.rst>
+  Tutorial home <self>
+  Discovery Environment login and setup <step1.rst>
+  Obtain Accession Numbers and Metadata from the SRA <step2.rst>
+  Upload files to the Data Store <step3.rst>
+  Import files from SRA with sra-tools <step4.rst>
+  Organize files, validate import, and extract to FastQ format <step5.rst>
+  Apply metadata to FastQ files <step6.rst>
+  QC Reads with FastQC <step7.rst>
+  Quantify reads with Kallisto <step8.rst>
+  Prepare experimental design metadata for Sleuth <step9.rst>
+  Evaluate differential expression with Sleuth  <step10.rst>
+  Conclusion <step11.rst>
+
 ..
 	#### Comment:This tutorial can have multiple pages. The table of contents assumes
 	you have an additional page called 'Step One' with content located in 'step1.rst'
@@ -72,10 +81,10 @@ Downloads, access, and services
     * - CyVerse account
       - You will need a CyVerse account to complete this exercise
       - |CyVerse User Portal|
-    * - Atmosphere access
-      - You must have access to Atmosphere
-      - |CyVerse User Portal|
-    * - Cyberduck
+    * - Spreadsheet software
+      - Software for editing spreadsheet data
+      - User provided (e.g. Excel, Google Sheets, or Open Office)
+    * - Cyberduck (optional)
       - Standalone software for upload/download to Data Store
       - |Download Cyberduck|
 
@@ -102,23 +111,7 @@ Platform(s)
       - Web/Point-and-click
       - |Discovery Environment|
       - |Discovery Environment Guide|
-    * - Atmosphere
-      - Command line (ssh) and/or Desktop (VNC)
-      - |Atmosphere|
-      - |Atmosphere Guide|
-    * - BisQue
-      - Web/Point-and-click and/or Command-line (API)
-      - |BisQue|
-      - |BisQue Manual|
-      - (See Manual)
-    * - DNA Subway
-      - Web/Point-and-click
-      - |DNA Subway|
-      - |DNA Subway Guide|
-    * - SciApps
-      - Command-line (API)
-      - |SciApps|
-      - |SciApps Guide|
+
 
 Application(s) used
 ~~~~~~~~~~~~~~~~~~~
@@ -135,29 +128,36 @@ Application(s) used
       - Description
       - App link
       - Notes/other links
-    * - Muscle
-      - 3.8.31
-      - Multiple sequence aligner
-      -	|CyVerse_launch|
-      - |Original App Documentation|
-
-
-**Atmosphere Image(s):**
-
-.. list-table::
-    :header-rows: 1
-
-    * - Image name
-      - Version
-      - Description
-      - Link
-      - Notes/other links
-    * - CyVerse CentOS 6.8 GUI Base
-      - 1.0
-      - base image CentOS 6.8 with GNOME GUI
-      - |CyVerse_launch|
-      -
-
+    * - sra-tools prefetch
+      - SRA tools version 2.8.10, CyVerse App version 0.1
+      - Utility for downloading data from NCBI Sequence Read Archive
+      - |sra-tools prefetch app|
+      - |SRA Tools Documentation|
+    * - sra-tools vdb-validate
+      - SRA tools version 2.8.10, CyVerse App version 0.1
+      - Utility for validating downloaded data from NCBI Sequence Read Archive
+      - |sra-tools vdb-validate app|
+      - |SRA Tools Documentation|
+    * - sra-tools fasterq-dump
+      - SRA tools version 2.8.10, CyVerse App version 0.1
+      - Convert SRA files to FastQ format
+      - |sra-tools fasterq-dump app|
+      - |SRA Tools Documentation|
+    * - FastQC
+      - 0.11.5
+      - Quality control reports for FastQ files
+      - |FastQC app|
+      - |FastQC Documentation|
+    * - Kallisto
+      - 0.43.1
+      - RNA-Seq quantification by pseudoalignment
+      - |Kallisto app|
+      - |Kallisto Documentation|
+    * - Sleuth
+      - 0.30.0
+      - VICE application of RStudio with Sleuth and related R packages
+      - |Sleuth app|
+      - |Sleuth Documentation|
 
 
 Input and example data
@@ -175,10 +175,29 @@ Input and example data
       - Format
       - Preparation/Notes
       - Example Data
-    * -
-      -
-      -
-      -
+    * - SRA files (from NCBI Sequence Read Archive) or FastQ files
+      - ".sra", ".fastq"
+      - This tutorial starts with importing data from the SRA. You could also start at |Organize files, validate import, and extract to FastQ format|
+      - |CyVerse Data Commons|
+    * - SRA Metadata, custom metadata
+      - ".csv"
+      - This tutorial uses metadata provided from the SRA. If using your own
+        FastQ files, you may create and use any metadata you wish.
+      - |CyVerse Data Commons 2|
+
+
+.. admonition:: sample-data
+
+   The data for this tutorial comes from Zia et al. 2019 which used
+   RNA-Seq to explore overlap in signaling pathways in Arabidopsis treated with
+   the hormones melatonin and auxin. Although these hormones have similar
+   chemical structures (indoles), the study identified distinct signaling
+   pathways and changes in gene expression. The dataset is available on the SRA
+   under BioProject PRJNA553702. We will attempt to replicate the RNA-Seq
+   portion of this analysis.
+
+   Zia, S. F., Berkowitz, O., Bedon, F., Whelan, J., Franks, A. E., & Plummer, K. M. (2019). Direct comparison of Arabidopsis gene expression reveals different responses to melatonin versus auxin. BMC Plant Biology. |https://doi.org/10.1186/s12870-019-2158-3|
+
 
 ----
 
@@ -235,16 +254,3 @@ Input and example data
    .. |Substitution| raw:: html # Place this anywhere in the text you want a hyperlink
 
       <a href="REPLACE_THIS_WITH_URL" target="blank">Replace_with_text</a>
-
-
-.. |Github Repo Link|  raw:: html
-
-   <a href="FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX" target="blank">Github Repo Link</a>
-
-.. |Download Cyberduck| raw:: html
-
-   <a href="https://cyberduck.io/" target="blank">Download Cyberduck</a>
-
-.. |Original App Documentation|  raw:: html
-
-   <a href="http://www.drive5.com/muscle/manual/" target="blank">Original App Documentation</a>

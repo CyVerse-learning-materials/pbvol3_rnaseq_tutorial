@@ -1,6 +1,10 @@
 .. Comment: Version 2.0, May 2020
 .. Comment: URLS
 
+.. |Github Repo Link|  raw:: html
+
+   <a href="FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX" target="blank">Github Repo Link</a>
+
 
 .. Comment: Fix this link if you are using a quicklaunch button
 
@@ -8,3 +12,115 @@
     :width: 125
     :height: 20
     :target: https://de.cyverse.org/de/  target="_blank"
+
+.. |sra-tools prefetch app| image:: ./img/Powered-By-CyVerse-blue.png
+    :width: 125
+    :height: 20
+    :target: https://de.cyverse.org/de/?type=quick-launch&quick-launch-id=80451d08-2183-4085-8fa0-d29a764dca91&app-id=4f94e974-ff81-11ea-acb0-008cfa5ae621  target="_blank"
+
+.. |sra-tools vdb-validate app| image:: ./img/Powered-By-CyVerse-blue.png
+    :width: 125
+    :height: 20
+    :target: https://de.cyverse.org/de/?type=quick-launch&quick-launch-id=0c6dcb40-afab-4bd2-8f91-9715212abe61&app-id=d563c068-0358-11eb-b24f-008cfa5ae621  target="_blank"
+
+.. |sra-tools fasterq-dump app| image:: ./img/Powered-By-CyVerse-blue.png
+    :width: 125
+    :height: 20
+    :target: https://de.cyverse.org/de/?type=quick-launch&quick-launch-id=fea0aadb-888d-420f-8d9c-989f65beb3c1&app-id=c32b39ea-035c-11eb-8c0c-008cfa5ae621  target="_blank"
+
+.. |FastQC app| image:: ./img/Powered-By-CyVerse-blue.png
+    :width: 125
+    :height: 20
+    :target: https://de.cyverse.org/de/?type=quick-launch&quick-launch-id=033737f2-9add-4de9-a1b4-ad0dd49d56aa&app-id=dbd0de10-97da-11e6-8f91-008cfa5ae621  target="_blank"
+
+.. |Kallisto app| image:: ./img/Powered-By-CyVerse-blue.png
+    :width: 125
+    :height: 20
+    :target: https://de.cyverse.org/de/?type=quick-launch&quick-launch-id=6132e25c-6576-4c84-bd6f-9e343e5ef03a&app-id=c341ba8c-30ad-11e8-8fb4-008cfa5ae621  target="_blank"
+
+.. |Sleuth app| image:: ./img/Powered-By-CyVerse-blue.png
+    :width: 125
+    :height: 20
+    :target: https://de.cyverse.org/de/?type=quick-launch&quick-launch-id=afd0da48-455d-4201-aafb-fe92d38f7986&app-id=4809de5a-037b-11eb-a1cc-008cfa5ae621  target="_blank"
+
+.. |SRA Tools Documentation|  raw:: html
+
+   <a href="https://github.com/ncbi/sra-tools/wiki" target="blank">Original App Documentation</a>
+
+.. |FastQC Documentation|  raw:: html
+
+   <a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/" target="blank">Original App Documentation</a>
+
+.. |Kallisto Documentation|  raw:: html
+
+   <a href="https://pachterlab.github.io/kallisto/manual" target="blank">Original App Documentation</a>
+
+.. |Sleuth Documentation|  raw:: html
+
+   <a href="https://pachterlab.github.io/sleuth/manual" target="blank">Original App Documentation</a>
+
+.. |Download Cyberduck| raw:: html
+
+   <a href="https://cyberduck.io/" target="blank">Download Cyberduck</a>
+
+.. |Organize files, validate import, and extract to FastQ format| raw:: html
+
+   <a href="./step5.html" target="blank">Organize files, validate import, and extract to FastQ format</a>
+
+.. |CyVerse Data Commons| raw:: html
+
+   <a href="https://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/pbv3" target="blank">CyVerse Data Commons</a>
+
+
+.. |CyVerse Data Commons 2| raw:: html
+
+   <a href="https://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/pbv3/rna-seq-tutorial/metadata/SraRunTable.txt" target="blank">CyVerse Data Commons</a>
+
+.. |https://doi.org/10.1186/s12870-019-2158-3| raw:: html
+
+   <a href="https://doi.org/10.1186/s12870-019-2158-3" target="blank">https://doi.org/10.1186/s12870-019-2158-3</a>
+
+
+.. |SRA| raw:: html
+
+   <a href="https://www.ncbi.nlm.nih.gov/sra" target="blank">SRA</a>
+
+.. |SRP214076| raw:: html
+
+   <a href="https://www.ncbi.nlm.nih.gov/Traces/study/?acc=SRP214076&o=acc_s%3Aa" target="blank">SRP214076</a>
+
+.. |SraRunTable| raw:: html
+
+   <a href="https://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/pbv3/rna-seq-tutorial/metadata/SraRunTable.txt" target="blank">SraRunTable</a>
+
+.. |SRR_Acc_List| raw:: html
+
+   <a href="https://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/pbv3/rna-seq-tutorial/metadata/SRR_Acc_List.txt" target="blank">SRR_Acc_List</a>
+
+.. |SRA files| raw:: html
+
+   <a href="https://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/pbv3/rna-seq-tutorial/imported_sra" target="blank">SRA files</a>
+
+.. |SRA FastQ Files| raw:: html
+
+   <a href="https://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/pbv3/rna-seq-tutorial/fastq_files" target="blank">SRA FastQ Files</a>
+
+.. |FastQ metadata| raw:: html
+
+   <a href="https://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/pbv3/rna-seq-tutorial/metadata/fastq_file_metadata.csv" target="blank">FastQ metadata</a>
+
+.. |FastQC Reports| raw:: html
+
+   <a href="https://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/pbv3/rna-seq-tutorial/FastQC_0.11.5__multi-file__analysis1-2020-10-07-22-18-23.5" target="blank">FastQC Reports</a>
+
+.. |Arabidopsis transcriptome| raw:: html
+
+   <a href="https://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/pbv3/rna-seq-tutorial/transcriptome" target="blank">Arabidopsis transcriptome</a>
+
+.. |Kallisto outputs| raw:: html
+
+   <a href="https://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/pbv3/rna-seq-tutorial/Kallisto-v.0.43.1_analysis1-2020-10-07-23-37-53.1/kallisto_qaunt_output" target="blank">Kallisto outputs</a>
+
+.. |Example experimental design| raw:: html
+
+   <a href="https://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/pbv3/rna-seq-tutorial/metadata/experimental_design.tsv" target="blank">Example experimental design</a>

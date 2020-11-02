@@ -10,11 +10,11 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 from misc.cyverse_sphinx_conf import *  # noqa
 
-project = 'YOUR PROJECT NAME HERE as topic_tutorial'
+project = 'Plant Bioinformatics Vol. 3 RNA-Seq Tutorial'
 copyright = '2020, CyVerse'
-author = 'CyVerse'
-version = '2.0'
-release = '2.0'
+author = 'Jason Williams'
+version = '1.0'
+release = '1.0'
 
 epub_title = project
 epub_author = author
