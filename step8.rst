@@ -7,7 +7,7 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Quantify reads with Kallisto
+Quantify Reads with Kallisto
 ------------------------------
 
 **Description:**
@@ -37,7 +37,7 @@ to the ‘Kallisto quant’ command at the command line).
 
 
 
-*Import transcriptome from Ensembl*
+*Import Transcriptome from Ensembl*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Go to the Ensembl homepage for Arabidopsis at https://plants.ensembl.org/Arabidopsis_thaliana/Info/Index.
@@ -49,88 +49,66 @@ to the ‘Kallisto quant’ command at the command line).
 
 4. In your web browser, copy the URL for this file (left click, **Copy Link Location** for most browsers). The URL for release 48 of Ensembl is ftp://ftp.ensemblgenomes.org/pub/plants/release-48/fasta/arabidopsis_thaliana/cdna/Arabidopsis_thaliana.TAIR10.cdna.all.fa.gz.
 
-5. In a Data window in the Discovery Environment, navigate to your **rna-seq-
-tutorial** folder.
+  .. tip::
+
+      Ensure you use the ‘cdna.all.fa.gz’; your annotation release must match what is used later in the Sleuth analysis
+
+
+5. In the Data view in the |Discovery Environment|, navigate to your **rna-seq-tutorial** folder.
 
 6. Create a new folder called **transcriptome** and navigate into the newly created folder.
 
-7. In the **Data** window, choose **Upload** and then **Import from URL**; paste in the URL for the Arabidopsis transcriptome. Be sure to avoid any extra spaces or characters at the end of your URL.
+7. In the **Data** view, click the **Upload** button and choose **Import from URL**; paste in the URL for the *Arabidopsis* transcriptome. Be sure to avoid any extra spaces or characters at the end of your URL. Click **Import** to complete this action. You will get a notification when import is complete. You may need to refresh your browser to see the imported file.
 
-8. Back on the Ensembl page, also copy the URL for the CHECKSUMS file.
+8. Back on the Ensembl page, also copy the URL for the CHECKSUMS file and repeat the import procedure to the same folder.
 
-9. Click **Import from URL** to import these two files.
+    .. tip::
 
-Tip: You can also apply metadata to the imported transcriptome. See the |Data
-Store Guide| for additional options for apply metadata.
+      You can also apply metadata to the imported transcriptome. See also the |Data Store Guide| for additional options for apply metadata.
 
 
-*Use Kallisto app to psuedoalign reads*
+*Use Kallisto App to Psuedoalign Reads*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-10. In the **App** panel, search for and launch the **Kallisto-v.0.43.1** app.
+9. Click on the **Data** icon and navigate to your **rna-seq-tutorial** tutorial folder and create a folder to store outputs, name the folder **kallisto_analyses**.
 
-You can use this direct link: |Kallisto app|
+10. In the **Apps** view, search for and launch the **Kallisto-v.0.43.1** app.
 
-11.	(Optional) you can name this analysis and provide any comments in the App
-launch window.
+11. In **Analysis Info** you can name this analysis and provide any comments (optional). Under **Output folder**, navigate to the **kallisto_analyses** folder created earlier. Your outputs will automatically be placed in this folder; click **Next**.
 
-12. Under **Select output folder**, navigate to the **rna-seq-tutorial** folder created earlier. Your outputs will automatically be placed in this folder.
+11. In **Parameters** under **Input**:
 
-13. Under **Input**:
+    (a)	For **The transcript fasta file supplied (fasta or gzipped)** browse to the **transcriptome** folder and add the **Arabidopsis_thaliana.TAIR10.cdna.all.fa.gz** file.
 
-    (a) For **The transcript fasta file supplied (fasta or gzipped)** browse to
-        the transcriptome folder (created above) and add the
-        **Arabidopsis_thaliana.TAIR10.cdna.all.fa.gz** file.
+    (b)	For **Paired or single end** choose single.
 
-    (b) For **Paired or single** end choose **single**.
+    (c)	Under **FASTQ Files (Read1)**: Click **Browse** and browse to the **fastq_files** folder and select 12 files (e.g., SRR9666131.sra.fastq, SRR9666132.sra.fastq…).
 
-    (c) Under **FASTQ Files (Read1)**: Click **Add** and browse to the
-        **fastq_files folder** and select 12 files (e.g., SRR9666131.sra.fastq,
-        SRR9666132.sra.fastq…)
+    *Under Options*
 
-14. Under **Options**:
+    (a)	For **Number of bootstrap samples** enter 25.
 
-    (a) For **Number of bootstrap samples** enter **25**.
+    (b)	For **Estimated average fragment length (required for single end reads)** enter 200.
 
-    (b) For **Estimated average fragment length (required for single end
-        reads)** enter **200**.
+    (c)	For **Estimated standard deviation of fragment length (required for single end reads)** enter 20.;
 
-    (c) For **Estimated standard deviation of fragment length (required for
-        single end reads)** enter **20**.
+                .. note::
 
-            .. note::
+                  Although SRA data usually does not
+                  contain fragment length and standard deviation, these are common
+                  values. For other options for this application, consult the
+                  |Kallisto Documentation|. Bootstrapping is the most
+                  computationally intensive option, so higher numbers of
+                  bootstrapping operations will cause the analysis to take longer
+                  to complete.
 
-              Although SRA data usually does not
-              contain fragment length and standard deviation, these are common
-              values. For other options for this application, consult the
-              |Kallisto Documentation|. Bootstrapping is the most
-              computationally intensive option, so higher numbers of
-              bootstrapping operations will cause the analysis to take longer
-              to complete.
+Click **Next**.
 
-  Click **Launch Analysis**.
+12. Click **Next** again to skip **Advanced Settings (optional)**; under **Review and Launch** click **Launch Analysis**.
 
-15. To see the current status of the job, click on the **Analyses** button.
-When the job is complete, you can click on the job name (e.g., **Kallisto-
-v.0.43.1_analysis1**) to open a data window and browse the results.
+13. Click on **Analyses** view to see the current status of the job; you can also click on the **Analyses** icon to navigate to this section. When the job is complete, you can click on the **folder** icon next to the analyses name to browse the results. You may need to **Refresh** to see the current job status. This job is estimated to take about 60-70 minutes.
 
-    .. note::
-      You may need to **Refresh** to see the current job status. This job is
-      estimated to take about 60-70 minutes.
-
-16. Back in the Analyses window, go back and select (checkbox) the analysis
-(e.g. **Kallisto-v.0.43.1_analysis1_analysis1**) and select the **Analyses**
-menu. Then choose **View Parameters**. This will present the parameters used in
-this analysis.Then choose **Save to File**; save this text file in your output
-folder (e.g., **rna-seq-tutorial/Kallisto-v.0.43.1_analysis1_analysis1-2020-10-
-04-11-40-57.1**) as **job_parameters.txt**.
-
-17. The expected output will be a folder **Kallisto_quant_output** containing 12
-folders (labeled with the accession name).
-
-
-
-
+14. When the job has status **Completed** to navigate to the expected output. The expected output will be a folder **Kallisto_quant_output** containing 12 folders (labeled with the accession name).
 
 
 **Output/Results**

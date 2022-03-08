@@ -43,16 +43,16 @@ Who to contact if this guide needs fixing. You can also email
 	:maxdepth: 2
 
   Tutorial home <self>
-  Discovery Environment login and setup <step1.rst>
+  Discovery Environment Login and Setup <step1.rst>
   Obtain Accession Numbers and Metadata from the SRA <step2.rst>
-  Upload files to the Data Store <step3.rst>
-  Import files from SRA with sra-tools <step4.rst>
-  Organize files, validate import, and extract to FastQ format <step5.rst>
-  Apply metadata to FastQ files <step6.rst>
+  Upload Files to the Data Store <step3.rst>
+  Import Files from SRA with sra-tools <step4.rst>
+  Organize Files, Validate Import, and Extract to FastQ Format <step5.rst>
+  Apply Metadata to FastQ Files <step6.rst>
   QC Reads with FastQC <step7.rst>
-  Quantify reads with Kallisto <step8.rst>
-  Prepare experimental design metadata for Sleuth <step9.rst>
-  Evaluate differential expression with Sleuth  <step10.rst>
+  Quantify Reads with Kallisto <step8.rst>
+  Prepare Experimental Design Metadata for Sleuth <step9.rst>
+  Evaluate Differential Expression with Sleuth  <step10.rst>
   Conclusion <step11.rst>
 
 ..

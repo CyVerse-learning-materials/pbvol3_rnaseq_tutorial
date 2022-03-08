@@ -24,9 +24,9 @@ In this section, we will describe how to import data from the NCBI Sequence Read
 
 1. Go to the |SRA|.
 
-2. Enter the BioProject accession **PRJNA553702** in the search bar and press **Search**.
+2. Enter the BioProject accession '**PRJNA553702**' in the search bar and press **Search**.
 
-3. This search should return 12 entries which are individual sequence files associated with this experiment. Click on any of the results (e.g., GSM3936272: 100µM MEL rep3; Arabidopsis thaliana; RNA-Seq). This will lead to a page with a detailed description of the experiment.
+3. This search should return 12 entries which are individual sequence files associated with this experiment. Click on any of the results (e.g., *GSM3936272: 100µM MEL rep3; Arabidopsis thaliana; RNA-Seq*). This will lead to a page with a detailed description of the experiment.
 
 4. Under the **Study** heading, find the link to **All runs** and click this to access the SRA Run Selector. (Direct link: |SRP214076|)
 
@@ -75,33 +75,6 @@ The **SraRunTable.txt** will be used to label our files using the Data Store's m
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
-
-.. Comment: Place Images Below This Line
-   use :width: to give a desired width for your image
-   use :height: to give a desired height for your image
-   replace the image name/location and URL if hyperlinked
-
-
- .. |Clickable hyperlinked image| image:: ./img/IMAGENAME.png
-    :width: 500
-    :height: 100
- .. _CyVerse logo: http://learning.cyverse.org/
-
- .. |Static image| image:: ./img/IMAGENAME.png
-    :width: 25
-    :height: 25
-
-
-
-.. Comment: Place URLS Below This Line
-
-   # Use this example to ensure that links open in new tabs, avoiding
-   # forcing users to leave the document, and making it easy to update links
-   # In a single place in this document
-
-   .. |Substitution| raw:: html # Place this anywhere in the text you want a hyperlink
-
-      <a href="REPLACE_THIS_WITH_URL" target="blank">Replace_with_text</a>
 
 
 .. |Github Repo Link|  raw:: html

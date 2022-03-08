@@ -8,7 +8,7 @@
 
 
 QC Reads with FastQC
--------------
+---------------------
 
 **Description:**
 
@@ -31,45 +31,23 @@ for downstream analysis.
       - |SRA FastQ Files|
 
 
-*Use FastQC app to report on sequence quality*
+*Use FastQC App to Report on Sequence Quality*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. In the **App panel**, search for and launch the **FastQC 0.11.5 (multi-
-file)** app.
+1. In the |Discovery Environment| click on the **Data** icon and navigate to your **rna-seq-tutorial** tutorial folder and create a folder to store outputs, name the folder **fastqc_analyses**.
 
-  You can use this direct link: |FastQC app|
+2. In the **Apps** view, search for and launch the **FastQC 0.11.5 (multi-file)** app. You can use this direct link: |FastQC app|
 
-2. (Optional) you can name this analysis and provide any comments in the **App
-launch window**.
+3. In **Analysis Info** you can name this analysis and provide any comments (optional). Under **Output folder**, navigate to the **fastqc_analyses** folder created earlier. Your outputs will automatically be placed in this folder; click **Next**.
 
-3. Under **Select output folder**, navigate to the **rna-seq-tutorial** folder
-created earlier. Your outputs will automatically be placed in this folder.
+4. In **Parameters** for **Input** browse to the **fastq_files** folder previously created and add the 12 files (e.g., SRR9666131.sra.fastq, SRR9666132.sra.fastq); click **Next**.
 
-4. Under **Input** browse to the **fastq_files** folder and add the 12 files
-(e.g., SRR9666131.sra.fastq, SRR9666132.sra.fastq…); then click **Launch
-Analysis**.
+5. Click **Next** again to skip **Advanced Settings (optional)**; under **Review and Launch** click **Launch Analysis**.
 
-5. To see the current status of the job, click on the **Analyses** button. When
-the job is complete, you can click on the job name (e.g.,
-**FastQC_0.11.5__multi-file__analysis1**) to open a data window and browse the
-results.
+6. Click on **Analyses** view to see the current status of the job; you can also click on the **Analyses** icon to navigate to this section. When the job is complete, you can click on the **folder** icon next to the analyses name to browse the results. You may need to **Refresh** to see the current job status. This job is expected to take 30-40 minutes.
 
-     .. note::
+7. When the job has status **Completed**, navigate to the output. The expected output will be 12 HTML formatted reports, and 12 zip files containing additional files including text-based metrics. You can click on and examine all the HTML files; they will open as new tabs in your web browser. Review of the example dataset indicates the samples are all of high quality and additional filtering or trimming would not improve our quantification results.
 
-       You may need to **Refresh** to see the current job status. This job is estimated to take about 30-40 minutes.
-
-6. Back in the **Analyses** window, go back and select (checkbox) the analysis
-(e.g. **FastQC_0.11.5__multi-file__analysis1**) and select the **Analyses**
-menu. Then choose **View Parameters**. This will present the parameters used in
-this analysis. Then choose **Save to File**; save this text file in your output
-folder (e.g. **rna-seq-tutorial/ FastQC_0.11.5__multi-file__analysis1-2020-10-
-04-11-40-57.1**) as **job_parameters.txt**.
-
-7. The expected output will be 12 HTML formatted reports, and 12 zip files
-containing additional files including text-based metrics. You can click on and
-examine all the HTML files; they will open as new tabs in your web browser.
-Review of the example dataset indicates the samples are all of high quality and
-additional filtering or trimming would not improve our quantification results.
 
 
 **Output/Results**

@@ -7,7 +7,7 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Prepare experimental design metadata for Sleuth
+Prepare Experimental Design Metadata for Sleuth
 ------------------------------------------------
 
 **Description:**
@@ -32,14 +32,14 @@ on your local computer, using a spreadsheet program. We can easily modify the
         indicate experimental variables and controls.
       - |SraRunTable|
 
-*Descriptive Steps*
-~~~~~~~~~~~~~~~~~~~
+*Create Experimental Design Table*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. In your spreadsheet program, open **SraRunTable.txt** (downloaded previously
 from SRA).
 
 2. According to the Sleuth instructions, the first column must be named
-‘**sample**’; rename the **Run** column to sample.
+‘**sample**’; rename the **Run** column to **sample**.
 
 3. Next, you will want to create new columns which specify attributes about
 each sample such as what treatment/condition correspond to each sample. In the
@@ -50,13 +50,11 @@ treated, high-melatonin, low-melatonin), replicate numbers, etc. See the
 4. Save the experimental design file in TSV format (e.g.
 **experimental_design.tsv**).
 
-5. In the Discovery Environment, navigate to the **metadata** folder you
-created for this experiment (**rna-seq-tutorial/metadata**). Open the folder
-and then go to the **File** menu; select **Simple Upload from Desktop**.
+5. In the |Discovery Environment|, navigate to the **metadata** folder you
+created for this experiment (**rna-seq-tutorial/metadata**). Click the **Upload** button and select **Browse Local**.
 
 6. Browse your local computer to select the experimental design file (i.e.,
-**experimental_design.tsv**); click **Upload**. It may take a moment to update
-your browser, **Refresh** if necessary.
+**experimental_design.tsv**) and upload the file. You will get a notification when upload is completed. You may need to refresh your browser to see the uploaded file.
 
 
 **Output/Results**

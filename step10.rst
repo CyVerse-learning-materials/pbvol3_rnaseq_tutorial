@@ -7,7 +7,7 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Evaluate differential expression with Sleuth
+Evaluate Differential Expression with Sleuth
 ----------------------------------------------
 
 **Description:**
@@ -30,50 +30,43 @@ In this final section of the tutorial, we will use the R package Sleuth to visua
       - See detailed description below
       - |Kallisto outputs|
 
-*Use Sleuth in RStudio app to calculate and visualize results*
+*Use Sleuth in RStudio App to Calculate and Visualize Results*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. In the **App** window, search for and launch the **RStudio Sleuth** app.
+1. In the |Discovery Environment| click on the **Data** icon and navigate to your **rna-seq-tutorial** tutorial folder and create a folder to store outputs, name the folder **sleuth_analysis**.
 
-    You can use this direct link: |Sleuth app|
+2.	In the **Apps** view, search for and launch the **RStudio Sleuth pb** app. You can use this direct link: |Sleuth app|.
 
-2. (Optional) you can name this analysis and provide any comments in the
-**App launch window**.
+3.	In **Analysis Info** you can name this analysis and provide any comments (optional). Under **Output folder**, navigate to the **sleuth_analysis** folder created earlier. Your outputs will automatically be placed in this folder; click **Next**.
 
-3. Under **Select output folder**, navigate to the **rna-seq-tutorial** folder
-created earlier. Your outputs will automatically be placed in this folder.
+4. In **Parameters** for **Notebooks** a default folder containing notebook specific to this tutorial will be loaded (**/iplant/home/shared/cyverse_training/tutorials/pbv3/R**) by default. You may change this if you have an alternative notebook.
 
-4. Under **Notebooks** a default folder containing notebook specific to this
-tutorial will be loaded (**/iplant/home/shared/cyverse_training/tutorials/pbv3/
-R**). You may change this if you have an alternative notebook.
+5. Under **Datasets** and **Data for analysis** navigate to the **rna-seq-tutorial** folder created earlier, go into the folder containing your Kallisto output, and select the **Kallisto_quant_output** folder.
 
-5. Under **Datasets** and **Data for analysis** navigate to the **rna-seq-
-tutorial** folder created earlier, go into the folder containing your Kallisto output, and select the **Kallisto_quant_output** folder.
+6. Under **Datasets and Study design file** navigate to the **rna-seq-tutorial** folder created earlier, go into the **metadata** folder and select the experimental design file (i.e., **experimental_design.tsv**); click **Next**.
 
-6. Under **Datasets** and **Study design file** navigate to the **rna-seq-
-tutorial** folder created earlier, go into the **metadata** folder and select
-the experimental design file (i.e., **experimental_design.tsv**); click
-**Launch Analysis**.
+7. Click **Next** again to skip **Advanced Settings (optional)**; under **Review and Launch** click **Launch Analysis**.
 
-7. Back in the **Analyses** window look for the analysis you just launched
-(e.g. **RStudio_Sleuth _analysis1**). There will be a link icon immediately to
-the left of the analysis name. Click this to open the RStudio session in a new
-browser tab.
+8. Click on **Analyses** view to see the current status of the job; you can also click on the **Analyses** icon to navigate to this section. When the job has the status Running you will be able to access the RStudio session. There will be a link icon immediately to the left of the analysis name. Click this to open the RStudio session in a new browser tab.
 
-8. We need to modify our RStudio home directory to make it easier to save
-files. Open the **Terminal** tab. Paste in the following command and hit enter.
+     .. tip::
 
-  .. code::
+       Although the job has Running status, it may take a few minutes to access the RStudio session, the amount of is related to the size of the files being transferred into the RStudio environment.
 
-    sudo chown -R rstudio /home/rstudio
 
-9. In the RStudio **Files** tab, go to the R folder and click
-**sleuth_pb_tutorial.Rmd** to open the notebook.
+*Working in RStudio*
+~~~~~~~~~~~~~~~~~~~~~~~
 
-10. Follow the notebook by clicking the green “play” button in each section
-(chunk) of R code. You can follow along with the notebooks explanations and
-then press play to run each code chunk. The final code chunk will launch the
-interactive visualizations in the R Shiny application.
+9. In the RStudio session we must modify our RStudio home directory to make it
+easier to save files. Open the **Terminal** tab. Paste in the following command and  hit enter:
+
+    .. code-block:: bash
+
+      sudo chown -R rstudio /home/rstudio
+
+10. In the RStudio Files tab, go to the R folder and click **sleuth_pb_tutorial.Rmd** to open the notebook.
+
+11. Follow the notebook by clicking the green “play” button in each section (chunk) of R code. You can follow along with the notebooks explanations and then press play to run each code chunk. The final code chunk will launch the interactive visualizations in the R Shiny application.
 
 **Rstudio Outline**
 
@@ -97,10 +90,7 @@ Without replicating the actual code presented in the notebook, here are the majo
 
            Your web browser must have pop-up blocking disabled to view the Shiny application.
 
-11. When you have finished with your RStudio session, return to the **Analysis**
-window and select (checkbox) the RStudio analysis. Go to the Analysis menu and
-select **Complete and Save Outputs**. Any files created during your RStudio
-analysis will be saved.
+12. When you have finished with your RStudio session, return to the **Analysis** view and select (checkbox) the RStudio analysis. Go to the Analysis view and select **Complete and Save Outputs**. Any files created during your RStudio analysis will be saved.
 
     .. note::
 
@@ -129,7 +119,7 @@ analysis will be saved.
 
 Sleuth Shiny application allows you to interactively examine and tailor tables
 of differential testing results as well as graphs of gene expression and other
-metrics. The Application also allows you to export and save these outputs.
+metrics. The application also allows you to export and save these outputs.
 
 ----
 

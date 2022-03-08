@@ -43,6 +43,11 @@
     :height: 20
     :target: https://de.cyverse.org/de/?type=quick-launch&quick-launch-id=afd0da48-455d-4201-aafb-fe92d38f7986&app-id=4809de5a-037b-11eb-a1cc-008cfa5ae621  target="_blank"
 
+
+.. |Figure 2| image:: ./img/figure2.png
+    :width: 800
+    :height: 400
+
 .. |SRA Tools Documentation|  raw:: html
 
    <a href="https://github.com/ncbi/sra-tools/wiki" target="blank">Original App Documentation</a>
@@ -124,3 +129,8 @@
 .. |Example experimental design| raw:: html
 
    <a href="https://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/pbv3/rna-seq-tutorial/metadata/experimental_design.tsv" target="blank">Example experimental design</a>
+
+
+.. |Learning Center| raw:: html
+
+   <a href="https://learning.cyverse.org" target="blank">Learning Center</a>

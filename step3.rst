@@ -7,13 +7,13 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Upload files to the Data Store
+Upload Files to the Data Store
 --------------------------------
 
 **Description:**
 
 We upload the metadata and accession list from SRA into our project folder on
-the data store.
+the Data Store.
 
 ----
 
@@ -23,11 +23,15 @@ the data store.
 
 We will upload the metadata and accession files to the Data Store. The metadata file is a CSV file organized as a spreadsheet.
 
-1. In the |Discovery Environment|, navigate to **rna-seq-tutorial** the folder you created.  Open the folder and then go to the **File** menu, then select **Simple Upload from Desktop**.
+1. In the |Discovery Environment| **Data** view, navigate to **rna-seq-tutorial** folder you previously created; once inside this folder click the **Upload** button, then select **Browse Local**.
 
-2. Browse your local computer to select the two files from the SRA (i.e., **SraRunTable.txt** and **SRR_Acc_List.txt**); click **Upload**.
+2. Browse your local computer to select the accession list downloaded from the SRA (i.e., **SRR_Acc_List.txt**). Upload the file.
 
-3. To organize these files once upload is complete, go to the **File** menu, and create a folder (suggested name: **metadata**). You can select and then drag the uploaded files into this newly created folder. It may take a moment to update your browser, **Refresh** if necessary.
+    .. note::
+
+      You will get a notification when upload is completed. You may need to refresh your browser to see the uploaded file.
+
+3. To organize this and other uploads, click the **Folder** button to create a folder (suggested name: **metadata**) inside the **rna-seq-tutorial** folder. Select (checkbox) the uploaded file (i.e., **SRR_Acc_List.txt**) and click the **More Actions** button; choose **Move** and then use the **Browse** button to select the created **metadata** folder as your destination to move these files to. Click **Move** to complete this action. You may need to refresh your browser to see changes.
 
 ----
 
