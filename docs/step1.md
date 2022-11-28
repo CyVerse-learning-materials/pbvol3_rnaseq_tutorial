@@ -29,10 +29,11 @@ results on the Data Store.
         You should avoid using spaces or special characters (e.g., !@#\$%\^&)
         in any folder or file names.
 
-4.  Once you have created this folder, you may want to share it with
+4\.  Once you have created this folder, you may want to share it with
     collaborators. To do so, select (checkbox) the **rna-seq-tutorial**
     folder in your **Data** view. Then, click the **Share** button.
-5.  (Optional) You can then enter the names (i.e., name, username, email
+    
+5\.  (Optional) You can then enter the names (i.e., name, username, email
     address) of collaborators you wish to share data with. These
     collaborators must also have a CyVerse account. Once you have found
     collaborators to share with, you must select the level of access you
@@ -40,6 +41,7 @@ results on the Data Store.
 
 !!! Tip
         See more on Data sharing in thr [Data Store Guide](https://learning.cyverse.org/de/manage_data/).
+
 ## *More on the Discovery Environment*
 
 **Layout of the Discovery Environment**
@@ -48,6 +50,8 @@ The Discovery Environment is a web-based graphical user interface that
 allows CyVerse users to manage, share, and annotate data, launch
 analysis jobs using applications, and log the status and history of
 analyses.
+
+![figure_2](../img/figure2.png)
 
 In this expanded view the left sidebar menu:
 
