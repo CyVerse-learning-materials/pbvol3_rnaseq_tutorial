@@ -1,5 +1,5 @@
 docs_dir: docs/
-repo_name: 'CyVerse-learning-materials/pbvol3_rnaseq_tutorial'
+repo_name: 'Plant Bioinformatics Vol 3 RNA-Seq Tutorial'
 repo_url: 'https://github.com/CyVerse-learning-materials/pbvol3_rnaseq_tutorial'
 
 site_name: 'CyVerse Learning Home'
@@ -15,8 +15,7 @@ copyright: 'Copyright &copy; 2022 CyVerse'
 # Navigation Page
 
 nav:
-  - 'Plant Bioinformatics Vol 3 RNA-Seq Tutorial':
-    - Home: docs/index.md
+  - 'Plant Bioinformatics Vol 3 RNA-Seq Tutorial': docs/index.md
     - 'Step 1': docs/step1.md
     - 'Step 2': docs/step2.md
     - 'Step 3': docs/step3.md
@@ -40,7 +39,7 @@ theme:
 # setting features for the navigation tab
   features:
     - navigation.instant
-      #- navigation.expand
+    - navigation.expand
     - navigation.tracking
       #- navigation.sections
     - navigation.indexes
