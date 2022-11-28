@@ -16,16 +16,16 @@ copyright: 'Copyright &copy; 2022 CyVerse'
 
 nav:
   - 'Plant Bioinformatics Vol 3 RNA-Seq Tutorial': docs/index.md
-    - 'Step 1': docs/step1.md
-    - 'Step 2': docs/step2.md
-    - 'Step 3': docs/step3.md
-    - 'Step 4': docs/step4.md
-    - 'Step 5': docs/step5.md
-    - 'Step 6': docs/step6.md
-    - 'Step 7': docs/step7.md
-    - 'Step 8': docs/step8.md
-    - 'Step 9': docs/step9.md
-    - 'Step 10': docs/step10.md
+  - 'Step 1': docs/step1.md
+  - 'Step 2': docs/step2.md
+  - 'Step 3': docs/step3.md
+  - 'Step 4': docs/step4.md
+  - 'Step 5': docs/step5.md
+  - 'Step 6': docs/step6.md
+  - 'Step 7': docs/step7.md
+  - 'Step 8': docs/step8.md
+  - 'Step 9': docs/step9.md
+  - 'Step 10': docs/step10.md
 #    - docs/step11.md
 
 # JavaScript for Intercom Widget
