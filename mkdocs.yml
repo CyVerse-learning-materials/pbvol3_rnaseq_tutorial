@@ -2,7 +2,7 @@ docs_dir: docs/
 repo_name: 'Plant Bioinformatics Vol 3 RNA-Seq Tutorial'
 repo_url: 'https://github.com/CyVerse-learning-materials/pbvol3_rnaseq_tutorial'
 
-site_name: 'CyVerse Learning Home'
+site_name: 'Plant Bioinformatics Vol 3 RNA-Seq Tutorial'
 site_description: 'Documentation for CyVerse Platforms and Education'
 site_author: 'CyVerse Science Team'
 site_url: 'https://learning.cyverse.org'
